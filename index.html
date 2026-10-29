@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Hamody ❤️</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #fff2d6;
+  background:
+    radial-gradient(ellipse at top, #292016 0%, #100e0b 48%, #050505 100%);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+  padding: 35px 18px 50px;
+  position: relative;
+}
+
+.top-heart {
+  color: #e8bd70;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.line {
+  color: #d6ad65;
+  letter-spacing: 8px;
+}
+
+.english {
+  direction: ltr;
+  font-family: Georgia, serif;
+  font-size: clamp(29px, 7vw, 43px);
+  margin: 12px 0 0;
+  font-weight: normal;
+  color: #f8e7c2;
+}
+
+.name {
+  direction: ltr;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: clamp(48px, 12vw, 83px);
+  margin: 0 0 20px;
+  color: #e9bd72;
+  text-shadow: 0 0 25px #c38a3b44;
+}
+
+.intro {
+  line-height: 2.1;
+  font-size: 16px;
+  color: #f6e7cd;
+}
+
+.gold { color: #e8bd70; }
+
+.envelope-area {
+  margin: 40px auto 30px;
+  max-width: 490px;
+}
+
+.envelope {
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid #bd8b45;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #211a12, #080808 70%);
+  color: #f2d29a;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 35px #b17c3022;
+  overflow: hidden;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.envelope:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px #d6a45444;
+}
+
+.envelope:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, transparent 49.5%,
+    #bd8b45 50%, transparent 50.5%);
+  opacity: .65;
+}
+
+.envelope:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(35deg, transparent 49.5%,
+    #bd8b45 50%, transparent 50.5%);
+  opacity: .65;
+}
+
+.open-text {
+  position: relative;
+  z-index: 2;
+  direction: ltr;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 21px;
+  padding-top: 20px;
+}
+
+.seal {
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-top: 38px;
+  background: linear-gradient(135deg, #ffe6a5, #b17a32);
+  color: #201307;
+  border-radius: 50%;
+  font-size: 28px;
+  box-shadow: 0 0 18px #e8bd7055;
+}
+
+.hint {
+  color: #d8b879;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.letter {
+  display: none;
+  text-align: right;
+  margin-top: 28px;
+  padding: 25px 20px;
+  border: 1px solid #b98a48;
+  border-radius: 20px;
+  background-color: #17130e;
+  background-image: url("p.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px #c28b3820;
+  animation: appear .8s ease;
+}
+
+.letter.show { display: block; }
+
+.letter-title {
+  text-align: center;
+  color: #e8bd70;
+  font-size: 22px;
+  line-height: 1.9;
+}
+
+.letter-text {
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 2.2;
+  color: #f7ead4;
+}
+
+.signature {
+  text-align: center;
+  font-size: 19px;
+  color: #e8bd70;
+  line-height: 2;
+  margin-top: 25px;
+}
+
+.footer {
+  color: #cfa65f;
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.floating-heart {
+  position: fixed;
+  bottom: -30px;
+  color: #d6a454;
+  pointer-events: none;
+  animation: floatUp 7s linear forwards;
+  z-index: 5;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0) rotate(0); opacity: 0; }
+  15% { opacity: .8; }
+  to { transform: translateY(-110vh) rotate(35deg); opacity: 0; }
+}
+
+@media (max-width: 420px) {
+  .page { padding-inline: 13px; }
+  .letter { padding: 20px 15px; }
+  .letter-text { font-size: 15px; }
+  .envelope { min-height: 190px; }
+}
+</style>
+</head>
+
+<body>
+<main class="page">
+
+  <div class="top-heart">— ♡ —</div>
+
+  <h1 class="english">Happy Birthday</h1>
+  <div class="name">Hamody ♡</div>
+
+
+
+  <div class="envelope-area">
+    <button class="envelope" id="envelope" onclick="openLetter()">
+      <div class="open-text">Open your gift ♡</div>
+      <div style="position:relative;z-index:2;margin-top:8px;">↓</div>
+      <div class="seal">♥</div>
+    </button>
+    <div class="hint"> click here ya hamodi🎁</div>
+  </div>
+
+  <section class="letter" id="letter">
+    <div class="line" style="text-align:center">— ♡ —</div>
+
+    <h2 class="letter-title">
+      كل سنه وكل ثانيه وانت حبيبي وكل حياتي ❤️
+    </h2>
+
+    <div class="letter-text">كل سنه وانت طيب يا حبيبي يارب العمر كله ليك وانت محقق كل الي بتتمناه يارب السنه الجديده من عمرك تكون بدايه لكل حاجه حلوه ، انا فخوره بيك دايما وفخوره بكل حاجه بتعملها ويارب دايما تبقي اشطر وانجح حد شوفته في حياتي وتفضل دايما تعلمني كل حاجه حلوه ربنا يخليك ليا يا حبيبي ونفضل دايما سوا وعقبال ال100 سنه وانا ع قلبك يا حمودي 😂😘❤️
+
+بحبك اوي يا حبيبي ❤️❤️❤️❤️
+I Can't imagine my life without u,You mean everything to me ❤️
+</div>
+
+  </section>
+
+  <div class="footer">
+    You make my world brighter ✨
+    <br>
+    Forever yours ♡
+  </div>
+
+</main>
+
+<script>
+function openLetter() {
+  const letter = document.getElementById("letter");
+  const envelope = document.getElementById("envelope");
+
+  letter.classList.add("show");
+  envelope.querySelector(".open-text").textContent = "Your gift is open ♥";
+  envelope.querySelector(".hint");
+
+  letter.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  for (let i = 0; i < 18; i++) {
+    setTimeout(createHeart, i * 130);
+  }
+}
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "floating-heart";
+  heart.textContent = ["♥", "♡", "✦"][Math.floor(Math.random() * 3)];
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (14 + Math.random() * 18) + "px";
+  heart.style.animationDuration = (5 + Math.random() * 4) + "s";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 9000);
+}
+</script>
+
+
+<script>
+document.getElementById("envelope").addEventListener("click", function () {
+  document.getElementById("letter").style.display = "block";
+});
+</script>
+
+
+<div style="margin:25px auto;text-align:center;">
+  <button id="musicButton"
+    onclick="playOurSong()"
+    style="background:#c49a50;color:#100d08;
+    border:1px solid #f4d58b;padding:14px 24px;
+    border-radius:30px;font-size:16px;cursor:pointer;">
+    🎵 click here again pleaseeee ya hamodiiii❤️
+  </button>
+
+  <div id="musicPlayer" style="display:none;margin-top:20px;">
+    <audio id="ourSong" controls>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
+
+<script>
+function playOurSong() {
+  const player = document.getElementById("musicPlayer");
+  const song = document.getElementById("ourSong");
+
+  player.style.display = "block";
+  song.play();
+
+  document.getElementById("musicButton").textContent =
+    "❤️ba7bk";
+}
+</script>
+
+
+
+</body>
+</html>
+
